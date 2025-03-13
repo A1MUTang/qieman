@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>ClollegeApplicationService.Web.Core.xml</DocumentationFile>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Remove="ClollegeApplicationService.Web.Core.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ClollegeApplicationService.Application\ClollegeApplicationService.Application.csproj" />
+		<ProjectReference Include="..\ClollegeApplicationService.Database.Migrations\ClollegeApplicationService.Database.Migrations.csproj" />
+	</ItemGroup>
+
+</Project>

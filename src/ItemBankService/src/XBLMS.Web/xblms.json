@@ -1,0 +1,22 @@
+﻿{
+  "IsProtectData": false,
+  "IsSafeMode": false,
+  "SecurityKey": "e599d68c121f8ef480520df969e5408ed496696053af3fc5",
+  "Database": {
+    "Type": "MySql",
+    "ConnectionString": "Server=192.168.3.63;Uid=root;Pwd=p@ssw0rd;Database=ItemBank;SslMode=Preferred;CharSet=utf8;"
+  },
+  "Redis": {
+    "ConnectionString": ""
+  },
+  "IsDisablePlugins": false,
+  "AdminRestriction": {
+    "Host": "",
+    "AllowList": [],
+    "BlockList": []
+  },
+  "Cors": {
+    "IsOrigins": false,
+    "Origins": []
+  }
+}
