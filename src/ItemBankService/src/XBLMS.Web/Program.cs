@@ -44,6 +44,16 @@ namespace XBLMS.Web
                 {
                     loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration);
                     loggerConfiguration.Enrich.FromLogContext();
+                })
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder
+                        .UseKestrel(options =>
+                        {
+                            options.Limits.MaxRequestBodySize = long.MaxValue;
+                            options.ListenAnyIP(5002); // 设置端口为5002
+                        })
+                        .UseStartup<Startup>();
                 });
     }
 }
