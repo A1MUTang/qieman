@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build UserService",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -14,7 +14,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
+            "label": "publish UserService",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -26,7 +26,7 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch",
+            "label": "watch UserService",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -34,6 +34,78 @@
                 "run",
                 "--project",
                 "${workspaceFolder}/src/UserService/UserService.Web.Entry/UserService.Web.Entry.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build ClollegeApplicationService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/ClollegeApplicationService/ClollegeApplicationService.Web.Entry/ClollegeApplicationService.Web.Entry.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish ClollegeApplicationService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/src/ClollegeApplicationService/ClollegeApplicationService.Web.Entry/ClollegeApplicationService.Web.Entry.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch ClollegeApplicationService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/src/ClollegeApplicationService/ClollegeApplicationService.Web.Entry/ClollegeApplicationService.Web.Entry.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build ItemBankService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/ItemBankService/src/XBLMS.Web/XBLMS.Web.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish ItemBankService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/src/ItemBankService/src/XBLMS.Web/XBLMS.Web.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch ItemBankService",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/src/ItemBankService/src/XBLMS.Web/XBLMS.Web.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

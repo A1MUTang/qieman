@@ -64,5 +64,15 @@
                 "/Views": "${workspaceFolder}/Views"
             }
         }
+    ],
+    "compounds": [
+        {
+            "name": "Start All Services",
+            "configurations": [
+                "UserService (web)",
+                "ClollegeApplicationService (web)",
+                "ItemBankService (web)"
+            ]
+        }
     ]
 }

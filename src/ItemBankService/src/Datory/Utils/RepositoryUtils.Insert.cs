@@ -144,7 +144,7 @@ SET IDENTITY_INSERT {database.GetQuotedIdentifier(tableName)} OFF;
 
                     if (tableColumn.DataType == DataType.Integer)
                     {
-                        if (val == null) val = 0;
+                        val ??= 0;
                         values.Append($"{Convert.ToInt32(val)},");
                     }
                     else if (tableColumn.DataType == DataType.Decimal)
